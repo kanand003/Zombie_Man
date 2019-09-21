@@ -667,9 +667,10 @@ GameObject:
   m_Component:
   - component: {fileID: 1576407054}
   - component: {fileID: 1576407053}
-  - component: {fileID: 1576407056}
   - component: {fileID: 1576407055}
   - component: {fileID: 1576407057}
+  - component: {fileID: 1576407056}
+  - component: {fileID: 1576407058}
   m_Layer: 0
   m_Name: MainCharExp
   m_TagString: Untagged
@@ -760,7 +761,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1576407056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -768,20 +769,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576407052}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1369062328c1c40975efe6c5a0328b, type: 3}
+  m_Script: {fileID: 11500000, guid: 5491e655ac49846498da1b21dcf15ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bc: {fileID: 0}
-  rb: {fileID: 1576407055}
-  moveSpeed: 2
-  jumpHeight: 2
-  groundCheck: {fileID: 163721290}
-  groundCheckRadius: 2
-  whatIsGround:
+  speed: 5
+  jumpSpeed: 8
+  groundCheckPoint: {fileID: 163721290}
+  groundCheckRadius: 0
+  groundLayer:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
 --- !u!61 &1576407057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -808,6 +807,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 3.2}
   m_EdgeRadius: 0
+--- !u!114 &1576407058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576407052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1369062328c1c40975efe6c5a0328b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bc: {fileID: 1576407057}
+  rb: {fileID: 1576407055}
+  moveSpeed: 2
+  jumpHeight: 2
+  groundCheck: {fileID: 163721290}
+  groundCheckRadius: 0
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1645816570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1220,7 +1240,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646128531}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5491e655ac49846498da1b21dcf15ce6, type: 3}
   m_Name: 
@@ -1382,8 +1402,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2066862263}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.442944, y: 13.393139, z: -10.115181}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 19.971, y: 20.076, z: -14.364}
+  m_LocalScale: {x: 1.3832598, y: 1.3832598, z: 1.3832598}
   m_Children:
   - {fileID: 1455549009}
   - {fileID: 992225620}
