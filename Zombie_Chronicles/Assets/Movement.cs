@@ -46,8 +46,5 @@ public class Movement : MonoBehaviour
 
     }
 
-    private void OnCollisonEnter(BoxCollider2D Col)
-    {
-
-    }
+    
 }
