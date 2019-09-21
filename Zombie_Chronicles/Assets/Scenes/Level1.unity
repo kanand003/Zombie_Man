@@ -509,6 +509,7 @@ GameObject:
   - component: {fileID: 1576407053}
   - component: {fileID: 1576407056}
   - component: {fileID: 1576407055}
+  - component: {fileID: 1576407057}
   m_Layer: 0
   m_Name: MainCharExp
   m_TagString: Untagged
@@ -621,6 +622,32 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!61 &1576407057
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576407052}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.6, y: 3.2}
+    newSize: {x: 1.6, y: 3.2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.6, y: 3.2}
+  m_EdgeRadius: 0
 --- !u!1 &1645816570
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,6 +659,7 @@ GameObject:
   - component: {fileID: 1645816571}
   - component: {fileID: 1645816573}
   - component: {fileID: 1645816572}
+  - component: {fileID: 1645816574}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -887,6 +915,22 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1645816574
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1645816570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &1646128531
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,6 +945,7 @@ GameObject:
   - component: {fileID: 1646128535}
   - component: {fileID: 1646128536}
   - component: {fileID: 1646128537}
+  - component: {fileID: 1646128538}
   m_Layer: 0
   m_Name: Zombies 2_0
   m_TagString: Untagged
@@ -1048,6 +1093,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!61 &1646128538
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1646128531}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.3333334, y: 1.7222222}
+    newSize: {x: 1.3333334, y: 1.7222222}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.3333334, y: 1.7222222}
+  m_EdgeRadius: 0
 --- !u!1001 &1998010717
 PrefabInstance:
   m_ObjectHideFlags: 0
