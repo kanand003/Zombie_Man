@@ -669,7 +669,6 @@ GameObject:
   - component: {fileID: 1576407053}
   - component: {fileID: 1576407055}
   - component: {fileID: 1576407057}
-  - component: {fileID: 1576407056}
   - component: {fileID: 1576407058}
   m_Layer: 0
   m_Name: MainCharExp
@@ -735,8 +734,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576407052}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.87, y: -0.85, z: -0.04}
-  m_LocalScale: {x: 0.7625, y: 0.775, z: 1}
+  m_LocalPosition: {x: -9.88, y: -2.997, z: -0.04}
+  m_LocalScale: {x: 0.7625, y: 0.624588, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -762,25 +761,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &1576407056
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576407052}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5491e655ac49846498da1b21dcf15ce6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  jumpSpeed: 8
-  groundCheckPoint: {fileID: 163721290}
-  groundCheckRadius: 0
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!61 &1576407057
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -821,8 +801,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bc: {fileID: 1576407057}
   rb: {fileID: 1576407055}
-  moveSpeed: 2
-  jumpHeight: 2
+  moveSpeed: 3
+  jumpHeight: 6
   groundCheck: {fileID: 163721290}
   groundCheckRadius: 0
   whatIsGround:
@@ -855,7 +835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1645816570}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.275, y: -0.059, z: 0}
+  m_LocalPosition: {x: -0.84, y: -0.06, z: 0}
   m_LocalScale: {x: 1.046, y: 0.985, z: 1}
   m_Children: []
   m_Father: {fileID: 1061160783}
@@ -2052,8 +2032,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1646128531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.157631, y: -1.1475956, z: 0.112}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -6.84, y: -3.045, z: 0.112}
+  m_LocalScale: {x: 1, y: 1.099, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
