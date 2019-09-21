@@ -29,7 +29,7 @@ public class Movement : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.W))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jumpHeight);
         }
