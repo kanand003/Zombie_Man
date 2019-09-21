@@ -7,7 +7,7 @@ public class Menu : MonoBehaviour
 {
    public void newgame()
      {
-        SceneManager.LoadScene("loading");
+        SceneManager.LoadScene("LoadScene");
      }
 
 
