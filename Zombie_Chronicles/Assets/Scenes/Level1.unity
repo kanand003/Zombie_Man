@@ -237,12 +237,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!4 &163721290 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2968296874841987186, guid: 723825533a478c845be4f731cbdd71ea,
-    type: 3}
-  m_PrefabInstance: {fileID: 1998010717}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &230559268
 GameObject:
   m_ObjectHideFlags: 0
@@ -1254,11 +1248,12 @@ GameObject:
   - component: {fileID: 1576407053}
   - component: {fileID: 1576407055}
   - component: {fileID: 1576407057}
-  - component: {fileID: 1576407058}
-  - component: {fileID: 1576407056}
   - component: {fileID: 1576407059}
+  - component: {fileID: 1576407056}
+  - component: {fileID: 1576407060}
+  - component: {fileID: 1576407061}
   m_Layer: 8
-  m_Name: MainCharExp
+  m_Name: Zac
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1349,7 +1344,7 @@ Rigidbody2D:
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1576407056
 MonoBehaviour:
@@ -1358,9 +1353,9 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1576407052}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbd4e0a9b5a653645a97c086cb8753c5, type: 3}
+  m_Script: {fileID: 11500000, guid: 7d430af600e105d43bc6705e709c32c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_JumpForce: 700
@@ -1372,7 +1367,7 @@ MonoBehaviour:
     m_Bits: 55
   m_GroundCheck: {fileID: 978626594}
   m_CeilingCheck: {fileID: 1384388865}
-  m_CrouchDisableCollider: {fileID: 0}
+  m_CrouchDisableCollider: {fileID: 1576407057}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -1388,11 +1383,11 @@ BoxCollider2D:
   m_GameObject: {fileID: 1576407052}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8fcf6c30aaf9f894bae7db7af6e0a4d9, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.035144955, y: 0.4741103}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1403,29 +1398,8 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6, y: 3.2}
+  m_Size: {x: 0.9874727, y: 2.3220162}
   m_EdgeRadius: 0
---- !u!114 &1576407058
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1576407052}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff1369062328c1c40975efe6c5a0328b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bc: {fileID: 1576407057}
-  rb: {fileID: 1576407055}
-  moveSpeed: 6
-  jumpHeight: 10
-  groundCheck: {fileID: 163721290}
-  groundCheckRadius: 0
-  whatIsGround:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!114 &1576407059
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1438,6 +1412,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e2ef72ed3767764da4d1f78299db443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &1576407060
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576407052}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 6200000, guid: 8fcf6c30aaf9f894bae7db7af6e0a4d9, type: 2}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02012442, y: -0.97}
+  serializedVersion: 2
+  m_Radius: 0.49042243
+--- !u!114 &1576407061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576407052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 017e84e050887bc4b964160a63d740b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1576407056}
+  runSpeed: 40
 --- !u!1 &1645583567
 GameObject:
   m_ObjectHideFlags: 0
@@ -1454,7 +1458,6 @@ GameObject:
   - component: {fileID: 1645583571}
   - component: {fileID: 1645583570}
   - component: {fileID: 1645583569}
-  - component: {fileID: 1645583568}
   m_Layer: 0
   m_Name: Zombies 2_0 (1)
   m_TagString: Untagged
@@ -1462,20 +1465,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1645583568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1645583567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 341b2bf6674d858489f75e254f0089a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 1
-  stoppingDistance: 0
 --- !u!114 &1645583569
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1488,8 +1477,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341b2bf6674d858489f75e254f0089a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  stoppingDistance: 3
+  speed: 1
+  stoppingDistance: 2
 --- !u!61 &1645583570
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1549,13 +1538,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5491e655ac49846498da1b21dcf15ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpSpeed: 8
-  groundCheckPoint: {fileID: 1645816571}
-  groundCheckRadius: 2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 2
 --- !u!95 &1645583573
 Animator:
   serializedVersion: 3
@@ -5738,7 +5720,6 @@ GameObject:
   - component: {fileID: 1646128536}
   - component: {fileID: 1646128537}
   - component: {fileID: 1646128538}
-  - component: {fileID: 1646128540}
   - component: {fileID: 1646128539}
   m_Layer: 0
   m_Name: Zombies 2_0
@@ -5859,13 +5840,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5491e655ac49846498da1b21dcf15ce6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpSpeed: 8
-  groundCheckPoint: {fileID: 1645816571}
-  groundCheckRadius: 2
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 2
 --- !u!50 &1646128537
 Rigidbody2D:
   serializedVersion: 4
@@ -5925,22 +5899,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341b2bf6674d858489f75e254f0089a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  stoppingDistance: 0
---- !u!114 &1646128540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1646128531}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 341b2bf6674d858489f75e254f0089a9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 5
-  stoppingDistance: 3
+  speed: 1
+  stoppingDistance: 2
 --- !u!1 &1715487524
 GameObject:
   m_ObjectHideFlags: 0
