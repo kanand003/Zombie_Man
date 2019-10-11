@@ -198,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90474131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.76, y: -17.93895, z: -10.04}
+  m_LocalPosition: {x: -1.760001, y: -28.15368, z: -10.04}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1360,8 +1360,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 0}
-  m_Follow: {fileID: 0}
+  m_LookAt: {fileID: 1576407054}
+  m_Follow: {fileID: 1576407054}
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 14.53
@@ -1385,7 +1385,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295434402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 11.3, z: -10}
+  m_LocalPosition: {x: -0.0000009832709, y: -0.97803885, z: -10}
   m_LocalScale: {x: 1.0310342, y: 1.2019935, z: 1}
   m_Children:
   - {fileID: 624967730}
@@ -1749,7 +1749,7 @@ MonoBehaviour:
     m_Bits: 55
   m_GroundCheck: {fileID: 978626594}
   m_CeilingCheck: {fileID: 1384388865}
-  m_CrouchDisableCollider: {fileID: 1576407057}
+  m_CrouchDisableCollider: {fileID: 1576407060}
   OnLandEvent:
     m_PersistentCalls:
       m_Calls: []
