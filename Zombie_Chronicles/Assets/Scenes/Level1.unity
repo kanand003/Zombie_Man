@@ -129,9 +129,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 90474134}
-  - component: {fileID: 90474133}
   - component: {fileID: 90474132}
   - component: {fileID: 90474135}
+  - component: {fileID: 90474133}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -174,8 +174,8 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 14.53
-  m_Depth: -1
+  orthographic size: 9
+  m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -198,7 +198,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 90474131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 44.04, y: 43.13132, z: -42.863}
+  m_LocalPosition: {x: 44.04, y: 43.440998, z: -42.863}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_Follow: {fileID: 2066862264}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 14.53
+    OrthographicSize: 9
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
@@ -1515,7 +1515,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1295434402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 47.221367, y: 84.70607, z: -42.822998}
+  m_LocalPosition: {x: 47.221367, y: 85.0783, z: -42.822998}
   m_LocalScale: {x: 1.0310342, y: 1.2019935, z: 1}
   m_Children:
   - {fileID: 624967730}
