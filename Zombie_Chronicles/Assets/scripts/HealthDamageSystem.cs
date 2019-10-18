@@ -8,11 +8,11 @@ public class HealthDamageSystem : MonoBehaviour
 {
     public GameObject z0,z1,z2,z3,z4,z5,z6;
     public int startingHealth = 100;                            // The amount of health the player starts the game with.
-    
+    public SimpleHealthBar healthBar;
 
     // Update is called once per frame
 
-    
+
     public void Start()
     {
         startingHealth = 100;
