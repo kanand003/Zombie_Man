@@ -14,6 +14,10 @@ public class HealthDamageSystem : MonoBehaviour
     {
         startingHealth = currentHealth; 
     }
+    public void Start()
+    {
+        startingHealth = 100;
+    }
     public void OnCollisionEnter2D(Collision2D collision)
     {
         
