@@ -34,7 +34,7 @@ public class PauseMenu : MonoBehaviour
 
     } 
 
-    public void Pause()
+     void Pause()
     {
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
@@ -44,12 +44,13 @@ public class PauseMenu : MonoBehaviour
 
     public void Restart()
     {
-        SceneManager.LoadScene("LoadScene");
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Level1");
     }
 
     public void Settings()
     {
-        SceneManager.LoadScene("Settings");
+        SceneManager.LoadScene("SettingsMenu");
     }
 
 
