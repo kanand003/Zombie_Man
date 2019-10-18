@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class HealthDamageSystem : MonoBehaviour
 {
-    public GameObject z0,z1,z2,z3,z4,z5,z6;
+    public GameObject z0,z1,z2,z3,z4,z5,z6,potion;
     public int startingHealth = 100;
     public int currentHealth;
     public SimpleHealthBar healthBar;
@@ -22,11 +22,16 @@ public class HealthDamageSystem : MonoBehaviour
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        //if(currentHealth==0)
+        if (startingHealth <= 0)
         {
-            //Death();
+            SceneManager.LoadScene("Lose");
         }
-        if(collision.gameObject==z0)
+        else if (collision.gameObject == potion)
+        {
+            SceneManager.LoadScene("Win");
+
+        }
+       else if (collision.gameObject==z0)
         {
             startingHealth = startingHealth - 10;
             Debug.Log(startingHealth);
@@ -65,8 +70,5 @@ public class HealthDamageSystem : MonoBehaviour
         healthBar.UpdateBar(100,startingHealth);
 
     }
-    void Death()
-    {
-        //SceneManager.LoadScene("");
-    }
+   
 }
