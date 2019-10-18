@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class HealthDamageSystem : MonoBehaviour
 {
     public GameObject z0,z1,z2,z3,z4,z5,z6;
-    public int startingHealth = 100;                            // The amount of health the player starts the game with.
+    public int startingHealth = 100;
+    public int currentHealth;
     public SimpleHealthBar healthBar;
 
     // Update is called once per frame
@@ -16,10 +17,12 @@ public class HealthDamageSystem : MonoBehaviour
     public void Start()
     {
         startingHealth = 100;
+        currentHealth = startingHealth;
+        healthBar.UpdateBar(startingHealth,currentHealth);
     }
     public void OnCollisionEnter2D(Collision2D collision)
     {
-        //if(startingHealth==0)
+        //if(currentHealth==0)
         {
             //Death();
         }
@@ -28,11 +31,7 @@ public class HealthDamageSystem : MonoBehaviour
             startingHealth = startingHealth - 10;
             Debug.Log(startingHealth);
         }
-        else if (collision.gameObject == z0)
-        {
-            startingHealth = startingHealth - 10;
-            Debug.Log(startingHealth);
-        }
+        
         else if (collision.gameObject == z1)
         {
             startingHealth = startingHealth - 10;
@@ -63,6 +62,8 @@ public class HealthDamageSystem : MonoBehaviour
             startingHealth = startingHealth - 10;
             Debug.Log(startingHealth);
         }
+        healthBar.UpdateBar(100,startingHealth);
+
     }
     void Death()
     {
