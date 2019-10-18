@@ -1310,8 +1310,8 @@ GameObject:
   - component: {fileID: 511292992}
   - component: {fileID: 511292989}
   - component: {fileID: 511292998}
-  - component: {fileID: 511292997}
   - component: {fileID: 511292996}
+  - component: {fileID: 511292997}
   m_Layer: 0
   m_Name: Zac new
   m_TagString: Player
@@ -1528,18 +1528,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511292988}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 445880c06e08db34294f435444bb5f38, type: 3}
+  m_Script: {fileID: 11500000, guid: 12c8838abefd60144969b1cbf1cac894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  zombie: {fileID: 1262911132}
   startingHealth: 100
-  currentHealth: 0
-  healthSlider: {fileID: 0}
-  damageImage: {fileID: 0}
-  deathClip: {fileID: 0}
-  flashSpeed: 5
-  flashColour: {r: 1, g: 0, b: 0, a: 0.1}
 --- !u!114 &511292998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1547,7 +1542,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 511292988}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bebc08e0740837e468a185090e07de5c, type: 3}
   m_Name: 
