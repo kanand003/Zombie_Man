@@ -21,8 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadScene.unity
     guid: 8a8c4d605268afc47be0f46e64d31e42
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+    path: Assets/Scenes/VIDEO END.unity
+    guid: 69452aa213fc9a8419173e83b5a33c3e
   - enabled: 1
     path: Assets/Scenes/Win.unity
     guid: da96f2b23aa883d4889ef096c31bc124
