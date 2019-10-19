@@ -440,10 +440,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Zac Has to save Himself from becoming a zombie
+  m_Text: 'Zac has to save himself from becoming a zombie.
 
     He has to drink potions to cure himself of the disease that is causing him to
-    become '
+    become a disease.
+
+    Avoid the zombies to live longer life. '
 --- !u!222 &689868785
 CanvasRenderer:
   m_ObjectHideFlags: 0
