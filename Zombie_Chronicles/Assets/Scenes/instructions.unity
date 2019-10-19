@@ -422,7 +422,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.033641864, g: 0.06215378, b: 0.26415092, a: 1}
+  m_Color: {r: 0.6117647, g: 0.6117647, b: 0.6117647, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -434,16 +434,18 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 40
-    m_Alignment: 0
-    m_AlignByGeometry: 0
+    m_Alignment: 3
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Zac Has to save Himself from becoming a zombie
+  m_Text: 'Zac has to save himself from becoming a zombie.
 
     He has to drink potions to cure himself of the disease that is causing him to
-    become '
+    become a disease.
+
+    Avoid the zombies to live a longer life. '
 --- !u!222 &689868785
 CanvasRenderer:
   m_ObjectHideFlags: 0
