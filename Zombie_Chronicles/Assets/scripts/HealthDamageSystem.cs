@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Experimental.Rendering.LWRP;
 
 public class HealthDamageSystem : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class HealthDamageSystem : MonoBehaviour
     public int startingHealth = 100;
     public int currentHealth;
     public SimpleHealthBar healthBar;
+
+    public Light2D L1,L2,L3,L4,L5,L6;
 
     // Update is called once per frame
 
@@ -35,6 +38,10 @@ public class HealthDamageSystem : MonoBehaviour
         {
             startingHealth = startingHealth - 10;
             Debug.Log(startingHealth);
+            //GameObject light = GameObject.FindWithTag("Light");
+            //L1 = light.GetComponent<Light2D>();
+            L1.enabled = false;
+            Debug.Log("L1");
         }
         
         else if (collision.gameObject == z1)
@@ -56,6 +63,13 @@ public class HealthDamageSystem : MonoBehaviour
         {
             startingHealth = startingHealth - 10;
             Debug.Log(startingHealth);
+            //if(L4.enabled==false)
+            //{
+                L4.enabled = true;
+                Debug.Log("T");
+           // }
+            
+            Debug.Log("L4");
         }
         else if (collision.gameObject == z5)
         {
