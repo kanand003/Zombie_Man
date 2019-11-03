@@ -16455,8 +16455,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   time: 5
   T1: {fileID: 25606030}
-  T2: {fileID: 0}
-  T3: {fileID: 0}
+  T2: {fileID: 1210240202}
+  T3: {fileID: 424786620}
 --- !u!4 &1793624848
 Transform:
   m_ObjectHideFlags: 0
